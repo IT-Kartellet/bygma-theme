@@ -1,0 +1,426 @@
+/* Custom CSS
+-------------------------*/
+h3,
+div.frontpage-course-text span.frontpage-course-shortname{
+    font-family: Soho W01 Regular, Arial, Sans-Serif;
+}
+
+a.btn.btn-navbar{
+    display: none;
+}
+
+body{
+    text-align: center;
+    background-image: url([[pix:theme|cement_bkg]]);
+    background-repeat: repeat;
+}
+
+div#page{
+    max-width: 960px;
+}
+
+div.logo {
+    background: url([[setting:logo]]) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+.dir-rtl div.logo {
+    background: url([[setting:logo]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}
+
+.nivo-directionNav a{
+    text-indent: -9999px;
+    background: url([[pix:theme|arrows]]);
+    width: 32px;
+    height: 34px;
+}
+
+a.nivo-nextNav {
+    background-position: -32px 0;
+    right: 10px;
+}
+
+a.nivo-prevNav {
+    left: 10px;
+}
+
+section#region-main,
+#block-region-side-pre{
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 0px 10px 0px #000;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+section#region-main{
+    padding: 16px;
+}
+
+body{
+    margin-top: 27px;
+}
+
+nav[role=navigation]{
+    background-color: #2B3137 !important;
+    background-image: initial;
+}
+
+nav[role=navigation] div.container-fluid{
+    max-width: 970px;
+}
+
+nav[role=navigation] div.container-fluid a.brand,
+nav[role=navigation] div.container-fluid span.usertext{
+    color: #FFF !important;
+    text-shadow: none;
+}
+
+div#action-menu-0{
+    background-color: transparent;
+}
+
+section#region-main div.frontpage-mycourses-wrapper{
+    margin-top: 16px;
+}
+
+section#region-main div.frontpage-mycourses-wrapper tr td div.course-image-wrapper img{
+    width: 100%;
+    padding-top: 6px;
+}
+
+section#region-main div.frontpage-mycourses-wrapper tr td.cell-1 div.frontpage-course-wrapper{
+    padding-right: 10px;
+}
+
+section#region-main div.frontpage-mycourses-wrapper tr td.cell-2 div.frontpage-course-wrapper{
+    padding: 0 5px;
+}
+
+section#region-main div.frontpage-mycourses-wrapper tr td.cell-3 div.frontpage-course-wrapper{
+    padding-left: 10px;
+}
+
+section#region-main div.frontpage-mycourses-wrapper table{
+    width: 100%;
+}
+
+div.frontpage-course-text h3.frontpage-course-fullname{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+div.frontpage-course-text span.frontpage-course-shortname{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+section#region-main div.frontpage-mycourses-wrapper tr td{
+    width: 33.3333%;
+}
+
+div.frontpage-course-text > *{
+    color: #000;
+}
+
+
+div.frontpage-course-text a:hover{
+    text-decoration: none;
+}
+
+
+/* Custom CSS Settings
+-------------------------*/
+
+/* TAB FORMAT */
+/* The border under tabs */
+.yui3-skin-sam .yui3-tabview-list
+{
+    border-bottom-color: transparent !important;
+    border: none;
+}
+
+
+
+/*The regular tab style*/
+.yui3-skin-sam .yui3-tab-label
+{
+    background: none !important;
+    width: 89px !important;
+    height: 36px;
+    max-height: 36px;
+    border: none;
+    margin: 0 !important;
+    text-align: center !important;
+    line-height: 32px !important;
+    padding-right: 20px !important;
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+
+}
+
+.yui3-skin-sam .yui3-tab {
+    margin-right: -24px;
+}
+
+/*  */
+
+
+
+.yui3-skin-sam .yui3-tabview-list>li:nth-child(2n){
+    background-color: transparent !important;
+    background: url([[pix:theme|second]]) !important;
+    background-repeat: no-repeat !important;
+
+}
+
+.yui3-skin-sam .yui3-tabview-list>li:nth-child(2n+1){
+    background-color: transparent !important;
+    background: url([[pix:theme|third]]) !important;
+    background-repeat: no-repeat !important;
+
+}
+
+.yui3-skin-sam .yui3-tabview-list>li:nth-child(1)
+{
+    background-color: transparent !important;
+    background: url([[pix:theme|first]]) !important;
+    background-repeat: no-repeat !important;
+
+}
+
+
+
+/*The regular tab style hover*/
+.yui3-skin-sam .yui3-tab-label:focus,
+.yui3-skin-sam .yui3-tab-label:hover
+{
+    /* background-color: #d9d9d7 !important;*/
+    /*
+    background: url([[pix:theme|third]]) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    */
+    background: none;
+}
+/*The selected tab border color*/
+.yui3-skin-sam .yui3-tab-selected .yui3-tab-label,
+.yui3-skin-sam .yui3-tab-selected .yui3-tab-label:focus,
+.yui3-skin-sam .yui3-tab-selected .yui3-tab-label:hover
+{
+    border-color: transparent !important;
+    /*background-color: #94c300 !important;*/
+    background: url([[pix:theme|active]]) !important;
+    background-repeat: no-repeat !important;
+
+    margin-bottom: 0 !important;
+
+    /* Note: On IE9 you will probably have to put "background: #2647A0 !important;" in order to force the color changes */
+}
+
+
+
+.activity img.activityicon {
+    display: none;
+}
+
+.section .activity .mod-indent-outer {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section li.activity{
+    background-image: url([[pix:theme|arrow]]);
+    background-repeat: no-repeat;
+    background-position: right 15px top 18px;
+}
+
+.section li.activity.url.modtype_url{
+    background-image: url([[pix:theme|share]]);
+}
+
+.section .label .contentwithoutlink, .section .label .activityinstance{
+    padding-right: 0;
+}
+
+.section .label .contentwithoutlink p {
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+.path-course-view li.activity>div {
+    padding-right: 0;
+}
+
+.section .activity.modtype_label.label {
+    padding: 0;
+    font-weight: normal;
+}
+
+.no-overflow{
+    padding-bottom: 0;
+}
+
+.section .label .mod-indent-outer {
+    padding-left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+span.mediaplugin{
+    margin: 0;
+}
+
+.section .label .mod-indent-outer div div.contentwithoutlink div div.no-overflow {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.section .label .mod-indent-outer iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.path-site li.modtype_label>div,
+.path-course-view li.modtype_label>div {
+    padding: 0px;
+}
+
+#page-mod-quiz-review div.info div.grade,
+#page-mod-quiz-review div.info div.questionflag,
+#page-mod-quiz-attempt div.info div.grade {
+    display: none;
+}
+
+ul.breadcrumb li:first-child {
+    display: none;
+}
+
+#page-mod-quiz-review table.quizreviewsummary  {
+    display: none;
+}
+#page-mod-quiz-view div.quizinfo,
+#page-mod-quiz-view #intro {
+    display: none;
+}
+
+#page-mod-quiz-attempt #block-region-side-pre,
+#page-mod-quiz-review #block-region-side-pre,
+#page-mod-quiz-summary #block-region-side-pre {
+    width: 100%;
+}
+
+#page-mod-quiz-review div.submitbtns {
+    margin-right: auto;
+    max-width: 150px;
+    margin-left: auto;
+}
+#page-mod-quiz-review div.submitbtns a {
+    background-color: #f5f5f5;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));
+    padding: 10px 15px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+    border-color: rgb(179, 179, 179);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+#responseform div.submitbtns {
+    width: 29px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.course-content div#maincontainer ul.sectionul{
+    margin-left: 0;
+}
+
+.yui3-skin-sam .yui3-tabview-panel{
+    margin-top: 16px;
+    border: 0;
+}
+
+body form fieldset{
+    padding: 0 16px;
+}
+
+body form fieldset div.fitemtitle{
+    width: auto !important;
+}
+
+body form fieldset div.felement.ftext,
+body form fieldset div.felement.feditor,
+body form fieldset div.felement.fdate_time_selector{
+    margin-left: 0 !important;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+body form fieldset div.felement.fselect,
+body form fieldset div.felement.fdate_time_selector{
+    clear: both !important;
+    display: block;
+    float: left;
+    margin-left: 0 !important;
+}
+/*END TAB FORMAT*/
+
+div#region-main-box #block-region-side-pre div.block{
+    padding: 15px 0;
+}
+
+
+
+/*QUIZ*/
+body#page-mod-quiz-attempt .que .formulation,
+body#page-mod-quiz-review .que .formulation{
+    background-color: transparent;
+    border: 1px solid #DCDCDC;
+}
+
+body#page-mod-quiz-review div.que.correct div.outcome{
+    color: #00B200;
+    background-color: transparent;
+    border: 1px solid #00B200;
+    border-radius: 0;
+}
+
+body#page-mod-quiz-review div.que.incorrect div.outcome{
+    color: #A70917;
+    background-color: transparent;
+    border: 1px solid #A70917;
+}
+
+body#page-mod-quiz-review div.que.incorrect div.outcome div.rightanswer{
+    color: #00B200;
+}
+
+body#page-mod-quiz-review div.formulation div.answer div.correct{
+    border: 1px solid #00B200;
+}
+
+body#page-mod-quiz-review div.formulation div.answer div.incorrect{
+    border: 1px solid #A70917;
+}
+/*END QUIZ*/
+
+[[setting:customcss]]

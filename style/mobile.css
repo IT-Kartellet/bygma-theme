@@ -1,0 +1,32 @@
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 676px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    section#region-main div.frontpage-mycourses-wrapper tr td{
+        width: 100%;
+        display: block;
+    }
+
+    section#region-main div.frontpage-mycourses-wrapper tr td div.frontpage-course-wrapper{
+        padding: 0 !important;
+    }
+
+    div.logo{
+        width: 100%;
+    }
+
+    body#page-mod-quiz-attempt .que .formulation, body#page-mod-quiz-review .que .formulation{
+        padding: 8px 16px;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+}
