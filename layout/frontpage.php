@@ -80,7 +80,8 @@ echo $OUTPUT->doctype() ?>
                     <?php
                         echo $OUTPUT->full_header();
                         echo render_frontpage_slider();
-                        echo render_frontpage_courses();
+                        echo render_frontpage_my_courses();
+                        echo render_frontpage_available_courses();
                         echo $OUTPUT->main_content();
                     ?>
                 </section>
