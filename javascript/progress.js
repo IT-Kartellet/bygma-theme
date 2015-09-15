@@ -16,12 +16,9 @@ M.block_progress = {
         }
         document.getElementById('progressBarInfo' + instance + '-' + user + '-' + id).style.display = 'block';
         this.progressBarLast[instance + '-' + user] = id;
-
-        console.log(this.progressBarLast);
     },
 
     hideInfo: function (instance, user) {
-        console.log('mouse left!!');
         var last = this.progressBarLast[instance + '-' + user];
         if(last != 'info'){
             document.getElementById('progressBarInfo' + instance + '-' + user + '-' + last).style.display = 'none';

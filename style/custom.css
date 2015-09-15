@@ -15,6 +15,15 @@ body{
     background-repeat: repeat;
 }
 
+fieldset{
+    min-width: 0;
+}
+
+fieldset input,
+fieldset select{
+    max-width: 100%;
+}
+
 div#page{
     max-width: 960px;
 }

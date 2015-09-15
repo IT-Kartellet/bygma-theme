@@ -178,8 +178,15 @@ function render_frontpage_slider(){
     foreach(get_resources_url('frontpageslider', 'theme_bygma') as $file){
         $course_id = extract_course_id($file['filename']);
         if(!is_numeric($course_id)){continue;}
-        $output .= html_writer::tag('a', html_writer::img($file['url'], null),
-            array('href' => "{$CFG->wwwroot}/course/view.php?id={$course_id}"));
+        if(!isloggedin()){
+            $output .= html_writer::tag('a', html_writer::img($file['url'], null),
+                //array('href' => "{$CFG->wwwroot}/course/view.php?id={$course_id}"));
+                array('href' => "{$CFG->wwwroot}/login/index.php"));
+        }
+        else{
+            $output .= html_writer::img($file['url'], null);
+        }
+
     }
     $output .= html_writer::end_div();
     return $output;
