@@ -15,6 +15,15 @@ body{
     background-repeat: repeat;
 }
 
+fieldset{
+    min-width: 0;
+}
+
+fieldset input,
+fieldset select{
+    max-width: 100%;
+}
+
 div#page{
     max-width: 960px;
 }
@@ -329,7 +338,7 @@ ul.breadcrumb li:first-child {
     display: none;
 }
 
-#page-mod-quiz-attempt #block-region-side-pre,
+/*#page-mod-quiz-attempt #block-region-side-pre,*/
 #page-mod-quiz-review #block-region-side-pre,
 #page-mod-quiz-summary #block-region-side-pre {
     width: 100%;
