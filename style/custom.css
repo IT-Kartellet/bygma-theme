@@ -29,6 +29,15 @@ div.logo {
     width: 50%;
 }
 
+fieldset{
+	min-width: 0;
+}
+
+fieldset input,
+fieldset select{
+	max-width: 100%;
+}
+
 .dir-rtl div.logo {
     background: url([[setting:logo]]) no-repeat 100% 0;
     display: block;
@@ -329,7 +338,7 @@ ul.breadcrumb li:first-child {
     display: none;
 }
 
-#page-mod-quiz-attempt #block-region-side-pre,
+/*#page-mod-quiz-attempt #block-region-side-pre,*/
 #page-mod-quiz-review #block-region-side-pre,
 #page-mod-quiz-summary #block-region-side-pre {
     width: 100%;
